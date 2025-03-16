@@ -19,9 +19,7 @@ def isValid(s: str) -> bool:
                 return False
         else:
             stack.append(char)
-
-    if stack:
-        return False    
-    return True
+              
+    return not stack
 
 print(isValid(sys.argv[1]))
