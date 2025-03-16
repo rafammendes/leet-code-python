@@ -1,3 +1,5 @@
+import sys
+
 def romanToInt(s: str) -> int:
     symbols = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
     if s in symbols:
@@ -18,4 +20,4 @@ def romanToInt(s: str) -> int:
     return value
         
 
-print(romanToInt('LVIII'))
+print(romanToInt(sys.argv[1]))
